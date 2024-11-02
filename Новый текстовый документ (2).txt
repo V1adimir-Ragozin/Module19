@@ -1,8 +1,0 @@
-1. https://habr.com/ru/companies/ruvds/articles/500296/ - 41 вопрос о работе со строками в Python
-2. https://www.reg.ru/blog/5-klassnyh-veschej-kotorye-vy-mozhete-osvoit-s-python/ - 5 вещей, которые вы можете освоить с Python
-3. https://www.youtube.com/watch?v=R4WF9xad_EI - 10 вопросов Python-разработчику
-4. https://dzen.ru/a/Y7bmQ6q_PRqaJWQU?sid=346112037537921537- список IT-профессий с указанием конкретных требований, зарплат и карьерных перспектив
-5. https://www.youtube.com/watch?v=WIttZGQEdas - Как на самом деле работает нейросеть?
-6. https://dzen.ru/a/Y1PCrL7TgDWtMzHU?sid=111922473914352640 - История IT. Создание Pascal и патент на компьютерную мышь
-7. https://dzen.ru/a/YjrRCaSlITp4ZLKt?sid=2517402354849922 - 5 сериалов про IT с самым высоким рейтингом
-8. https://dzen.ru/a/YfKAlDtRwx5KkobF - Зачем программисту английский и как его учить
