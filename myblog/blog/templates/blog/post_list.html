@@ -1,0 +1,44 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Blog Posts</title>
+   </head>
+   <body>
+       <h1>Blog Posts</h1>
+
+       <form method="get">
+           <label for="per_page">Постов на странице:</label>
+           <select name="per_page" id="per_page" onchange="this.form.submit()">
+               <option value="3" {% if per_page == '3' %}selected{% endif %}>3</option>
+               <option value="5" {% if per_page == '5' %}selected{% endif %}>5</option>
+               <option value="10" {% if per_page == '10' %}selected{% endif %}>10</option>
+           </select>
+           <input type="hidden" name="page" value="{{ page_obj.number }}">
+       </form>
+       <ul>
+           {% for post in page_obj %}
+               <li>{{ post.title }} - {{ post.created_at }}</li>
+           {% endfor %}
+       </ul>
+
+       <div class="pagination">
+           <span class="step-links">
+               {% if page_obj.has_previous %}
+                   <a href="?page=1">&laquo; first</a>
+                   <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+               {% endif %}
+
+               <span class="current">
+                   Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+               </span>
+
+               {% if page_obj.has_next %}
+                   <a href="?page={{ page_obj.next_page_number }}">next</a>
+                   <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+               {% endif %}
+           </span>
+       </div>
+   </body>
+   </html>
